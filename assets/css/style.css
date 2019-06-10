@@ -10,6 +10,7 @@ body{
 	height: 300px;
 	margin: auto;
 	background-color: #ccc;
+	overflow: hidden;
 }
 .slide .slideArea{
 	display: flex;
