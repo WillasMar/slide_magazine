@@ -1,0 +1,116 @@
+*{
+	font-family: arial;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+}
+.slide{
+	width: 1000px;
+	height: 300px;
+	margin: auto;
+	background-color: #ccc;
+}
+.slide .slideArea{
+	display: flex;
+	height: 300px;
+	transition: 2s margin-left;
+}
+.slide .slideArea .slideItem{
+	height: 300px;
+	text-align: center;
+	line-height: 300px;
+}
+.slide .slideArea .slideItem1{
+	background-color: #CC3366;
+}
+.slide .slideArea .slideItem2{
+	background-color: #FF3399;
+}
+.slide .slideArea .slideItem3{
+	background-color: #FF0066;
+}
+.slide .slideArea .slideItem4{
+	background-color: #CC0066;
+}
+.slide .slideArea .slideItem5{
+	background-color: #CC9999;
+}
+.slide .passar{
+	width: 60px;
+	height: 300px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: rgba(0,153,255, 0.1);
+    position: absolute;
+}
+.slide .passar:hover{
+	background: rgba(0,153,255, 0.3);
+}
+.slide .passar:hover .passarInt{
+	background-color: #00FFFF;
+}
+.slide .posterior{
+	margin-left: 940px;
+}
+.slide .passar .passarInt{
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+}
+.slide .passar .passarInt img{
+	width: 15px;
+	height: 16px;
+}
+.slide .posicao{
+	width: 40px;
+	position: absolute;
+	margin-left: 81px;
+	margin-top: 45px;
+}
+.slide .posicao .posicaoItem{
+	width: 40px;
+	height: 40px;
+	margin-bottom: 2px;
+	background-color: #FFF;
+	color: #ccc;
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+}
+.slide .posicao .posicaoItem:hover{
+	cursor: pointer;
+	background-color: #00CCFF;
+}
+.slide .posicao .selecionado{
+	background-color: #0099FF;
+	color: #fff;
+}
+.slide .posicao .p0{
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+}
+.slide .posicao .p4{
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+}
+.slide .progresso{
+	max-width: 598px;
+    width: 100%;
+    height: 4px;
+    border: 1px solid #CCC;
+    position: absolute;
+    margin-top: 290px;
+    margin-left: 200px;
+}
+.slide .progresso .progressoInt{
+	width: 0px;
+	height: 100%;
+	background-color: yellow;
+}
