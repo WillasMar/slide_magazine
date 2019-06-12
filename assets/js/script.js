@@ -51,10 +51,12 @@ $(function(){
 
 	//adiciona evento de passar o mouse no slide
 	//ao passar o slide pausa, ao sair ele continua
-	$('.slide').hover(function(){
+	$('.slide').bind('mouseover',function(){
 		$('.progressoInt').stop();
-	}, function(){
-		progresso();
+	});
+	$('.slide').bind('mouseout',function(){
+		$('.progressoInt').animate(progresso());
+		//setTimeout(progresso,2000);
 	});
 
 	//função que enche a barra de progresso
@@ -94,6 +96,8 @@ $(function(){
 		$('.posicao .posicaoItem').removeClass('selecionado');
 		$(posicao).addClass('selecionado');
 		$('.slideArea').css('margin-left', '-'+ (slideWidth * pos) +'px');
+
+		//progresso();
 
 		setTimeout(progresso,2000);		
 	}
